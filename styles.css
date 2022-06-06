@@ -1,0 +1,50 @@
+body {
+    background: Black;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+.topOfSite {
+    background-color: black;
+}
+.intro {
+    text-align: center;
+    color: wheat;
+    font-size: 100px;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 100px 50px;
+}
+.socials {
+    color:wheat;
+    background-color: black;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+}
+a:hover {
+    color: brown;
+}
+li {
+    display: inline;
+    /* margin-left: 35px; */
+}
+
+ul {
+    list-style-type: none;
+    margin: 30px;
+    padding: 0;
+}
+div {
+    background-color: white;
+    height: 100%;
+}
+.twitterLogo {
+    height: 75px;
+    width: 200px;
+}
+.navLogo {
+    font-size: 20px;
+    word-spacing: .05px;
+}
