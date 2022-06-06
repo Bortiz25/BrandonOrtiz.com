@@ -41,10 +41,22 @@ div {
     height: 100%;
 }
 .twitterLogo {
-    height: 75px;
-    width: 200px;
+    fill: wheat;
+    height: auto;
+    width: 50px;
+    padding-top: 30px;
+    position: relative;
+    bottom: 12px;
+}
+.githubLogo {
+    background-color: wheat;
+    display: inline-block;
+    position: relative;
+    bottom: 22px;
 }
 .navLogo {
     font-size: 20px;
     word-spacing: .05px;
+    position: relative;
+    bottom: 30px;
 }
