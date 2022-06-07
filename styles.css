@@ -88,6 +88,7 @@ ul {
 }
 
 .socials {
+    background: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,11 +98,9 @@ ul {
 
 /* Home Screen styling */
 
-body {
-    background: Black;
-}
-
 .homeScreen {
+    background: Black;
+    height: calc(100vh - 80px);
     width: 100%;
     display: flex;
     align-items: center;
@@ -115,5 +114,4 @@ body {
     font-weight: lighter;
     font-family: 'Courier New', Courier, monospace;
     padding: 100px 50px;
-    margin-top: 110px;
 }
