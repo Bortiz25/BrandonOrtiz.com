@@ -104,14 +104,17 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    width: 100%;
     padding: 30px;
+    position: fixed;
+    z-index: 1;
 }
 
 /* Home Screen styling */
 
 .homeScreen {
     background: Black;
-    height: calc(100vh - 80px);
+    height: calc(100vh);
     width: 100%;
     display: flex;
     align-items: center;
