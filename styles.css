@@ -26,6 +26,7 @@ CSS reset code
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    background: black;
   }
   /*
     6. Improve media defaults
@@ -55,6 +56,13 @@ CSS reset code
 
 /* Beginning of my code */
 
+/* universal styling */
+* {
+  font-family: 'Courier New', Courier, monospace;
+  color: wheat;
+  background: blackå;
+}
+
 /* nav bar styling */
 
 a {
@@ -67,18 +75,21 @@ ul {
     padding: 0;
 }
 
-.twitterLogo, .githubLogo {
-    height: 50px;
-    width: 50px;
+.navTags {
+  font-size: 30px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+a:hover {
+  color: brown;
 }
 
 .navLogo {
     font-size: 20px;
     word-spacing: .05px;
-    color:wheat;
     background-color: black;
     font-size: 30px;
-    font-family:'Courier New', Courier, monospace;
 }
 
 .navList {
@@ -109,9 +120,41 @@ ul {
 
 .intro {
     text-align: center;
-    color: wheat;
     font-size: 100px;
     font-weight: lighter;
-    font-family: 'Courier New', Courier, monospace;
     padding: 100px 50px;
+}
+
+/* about me page styling */
+
+#aboutMe {
+  background: wheat;
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+} 
+
+.description {
+  color: black;
+  text-align: center;
+  position: relative;
+  height: 500px;
+  width: 360px;
+  top: 250px;
+  right: 60.87;
+
+}
+
+.headshot {
+  height: 550px;
+  width: auto;
+  border: 4px solid black;
+  border-radius: 20px;
+  position: relative;
+  top: 225px;
+  right: 125px;
+  left: 60.87;
 }
