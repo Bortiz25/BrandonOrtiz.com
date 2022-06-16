@@ -66,13 +66,13 @@ CSS reset code
 /* nav bar styling */
 
 a {
-    color: inherit;
-    text-decoration: inherit;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .navTags {
@@ -86,53 +86,53 @@ a:hover {
 }
 
 .navLogo {
-    font-size: 20px;
-    word-spacing: .05px;
-    background-color: black;
-    font-size: 30px;
+  font-size: 20px;
+  word-spacing: .05px;
+  background-color: black;
+  font-size: 30px;
 }
 
 .navList {
-    display: flex;
-    gap: 15px;
-    justify-content: flex-start;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
 }
 
-.socials {
-    background: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    width: 100%;
-    padding: 30px;
-    position: fixed;
-    z-index: 1;
+.navBar {
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  padding: 30px;
+  position: fixed;
+  z-index: 1;
 }
 
 /* Home Screen styling */
 
 .homeScreen {
-    background: Black;
-    height: calc(100vh);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: Black;
+  height: calc(100vh);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .intro {
-    text-align: center;
-    font-size: 100px;
-    font-weight: lighter;
-    padding: 100px 50px;
+  text-align: center;
+  font-size: 100px;
+  font-weight: lighter;
+  padding: 100px 50px;
 }
 
 /* about me page styling */
 
 #aboutMe {
   background: wheat;
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 1000px;
   display: flex;
@@ -160,4 +160,34 @@ a:hover {
   top: 225px;
   right: 125px;
   left: 60.87;
+}
+
+/* Footer styling */
+
+footer {
+  background-color: black;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  /* border: 2px solid yellow; */
+}
+
+.rightFooter {
+  /* border: 2px solid blueviolet; */
+  width: 50%;
+  flex-direction: column;
+}
+
+.footerLogo {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  /* border: 2px solid red; */
+}
+
+.socialsLogo {
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid green; */
 }
