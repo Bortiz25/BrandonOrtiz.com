@@ -162,8 +162,11 @@ footer {
   width: 100vw;
   display: flex;
   position: absolute;
+  flex-direction: column;
   /* border: 2px solid yellow; */
 }
+
+/* styling meant for desktop styling */
 
 .rightFooter {
   /* border: 2px solid blueviolet; */
@@ -173,10 +176,11 @@ footer {
   flex-direction: column;
 }
 
+/* social media footer section styling */
+
 .footerLogo {
   width: 100vw;
   height: 124px;
-  font-size: medium;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -195,4 +199,33 @@ footer {
 .socialsLogo img {
   width: 60px;
   height: 60px;
+}
+
+/* contact me portion of footer styling */
+
+.contactMe {
+  width: 100vw;
+  height: 50%;
+  margin-top: 18px;
+  /* border: 1px solid paleturquoise; */
+}
+
+/* styling for the "contact" header */
+.contactMe h4 {
+  width: 100vw;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+/* styling for the email */
+.contactMe h5 {
+  width: 100vw;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
 }
