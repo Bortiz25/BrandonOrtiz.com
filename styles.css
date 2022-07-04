@@ -96,10 +96,10 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  width: 100vw;
+  width: calc(100vw);
   padding: 30px;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Home Screen styling */
@@ -136,13 +136,14 @@ a:hover {
 .description {
   color: #626060;
   background-color: #DADBC0;
+  display: flex;
   font-size: 20px;
-  text-align: center;
+  text-align: justify;
   position: relative;
   height: auto;
   width: 350px;
   bottom: 18px;
-  left: 20px;
+  left: 25px;
 }
 
 .headshot {
@@ -153,6 +154,7 @@ a:hover {
   position: relative;
   top: 18px;
   left: 45px;
+  display: flex;
 }
 
 /* Footer styling */
@@ -229,4 +231,109 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 20px;
+}
+
+/* Styling for the page when the screen size is over 820px */
+
+@media (min-width: 820px) { 
+
+  /* nav bar styling over 820px */
+  .navBar {
+    width: 100vw;
+    height: 150px;
+  }
+
+  .navLogo {
+    font-size: 35px;
+    margin-left: 20px;
+  }
+
+  .navTags {
+    font-size: 35px;
+    margin-right: 50px;
+  }
+
+  /* Home page styling for over 820px */
+  .intro {
+    font-size: 90px;
+    flex-wrap: wrap;
+  }
+
+  /* About me page styling for over 820px */
+  #aboutMe {
+    height: 1500px;
+    align-items: center;
+  }
+
+   .headshot {
+    top: 30px;
+    left: 0px;
+  }
+
+  .description {
+    font-size: 30px;
+    background: none;
+    width: 75%;
+    height: auto;
+    left: 0px;
+    bottom: 30px;
+    text-align: justify;
+  }
+
+  /* footer styling for over 820px */
+
+  footer {
+    height: 650px;
+  }
+
+  .socialsLogo img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .footerLogo {
+    font-size: 60px;
+    margin: 20px 0 0 0;
+  }
+
+  .contactMe {
+    margin-top: 20px;
+  }
+
+  .contactMe h4 {
+    font-size: 60px;
+  }
+
+  .contactMe h5 {
+    font-size: 40px;
+  }
+
+}
+
+/* styling for desktop and larger screens for 1024 px and bigger */
+
+@media (min-width: 1024px) {
+  
+  /* navbar styling for 1024px and above */
+  .navBar {
+    height: 100px;
+  }
+
+  .navLogo {
+    font-size: 25px;
+  }
+
+  .navTags {
+    font-size: 25px;
+  }
+
+  /* home screen stlying for 1024px and above */
+  .intro {
+    font-size: 78px;
+  }
+
+  /* about me page styling for 1024px and above */
+
+  /* we're going to make the text wrap with this one  */
+
 }
