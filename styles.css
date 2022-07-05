@@ -59,8 +59,8 @@ CSS reset code
 /* universal styling */
 * {
   font-family: 'Courier New', Courier, monospace;
-  color: wheat;
-  background: blackå;
+  color: #E7E9DE;
+  background: #626060;
 }
 
 /* nav bar styling */
@@ -76,118 +76,316 @@ ul {
 }
 
 .navTags {
-  font-size: 30px;
-  margin-right: 20px;
-  margin-top: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-top: 5spx;
 }
 
 a:hover {
-  color: brown;
+  color: wheat;
 }
 
 .navLogo {
+  background-color: #626060;
   font-size: 20px;
-  word-spacing: .05px;
-  background-color: black;
-  font-size: 30px;
-}
-
-.navList {
-  display: flex;
-  gap: 15px;
-  justify-content: flex-start;
 }
 
 .navBar {
-  background: black;
+  background: #626060;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
-  width: 100%;
+  height: 100px;
+  width: calc(100vw);
   padding: 30px;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Home Screen styling */
 
 .homeScreen {
-  background: Black;
+  background: #626060;
   height: calc(100vh);
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .intro {
+  background: #626060;
   text-align: center;
-  font-size: 100px;
+  font-size: 50px;
   font-weight: lighter;
   padding: 100px 50px;
 }
 
 /* about me page styling */
 
+.aboutMeBackground {
+  background: #DADBC0;
+  width: 100vw;
+}
+
 #aboutMe {
-  background: wheat;
-  position: relative;
-  width: 100%;
-  height: 1000px;
+  background-color: inherit;
+  padding: 60px 40px;
   display: flex;
-  justify-content: center;
-  gap: 50px;
+  flex-direction: column;
+  align-items: center;
 } 
 
 .description {
-  color: black;
-  text-align: center;
-  position: relative;
-  height: 500px;
-  width: 360px;
-  top: 250px;
-  right: 60.87;
-
+  color: #626060;
+  background-color: #DADBC0;
+  display: flex;
+  font-size: 20px;
+  text-align: justify;
+  height: auto;
 }
 
 .headshot {
-  height: 550px;
-  width: auto;
-  border: 4px solid black;
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  border: 4px solid #626060;
   border-radius: 20px;
-  position: relative;
-  top: 225px;
-  right: 125px;
-  left: 60.87;
+  margin-bottom: 30px;
+
 }
 
 /* Footer styling */
 
 footer {
-  background-color: black;
-  height: 300px;
-  width: 100%;
+  background-color: #626060;
+  height: 500px;
+  width: 100vw;
   display: flex;
-  position: absolute;
+  flex-direction: column;
   /* border: 2px solid yellow; */
 }
 
+/* styling meant for desktop styling */
+
 .rightFooter {
-  /* border: 2px solid blueviolet; */
-  width: 50%;
+  width: 100vw;
+  height: 50%;
+  display: flex;
   flex-direction: column;
 }
 
+/* social media footer section styling */
+
 .footerLogo {
+  width: 100vw;
+  height: 124px;
   display: flex;
-  justify-content: center;
-  font-size: 30px;
-  /* border: 2px solid red; */
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 40px;
 }
 
 .socialsLogo {
+  width: 100vw;
+  height: 124px;
   display: flex;
-  justify-content: center;
-  /* border: 2px solid green; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.socialsLogo img {
+  width: 60px;
+  height: 60px;
+}
+
+/* contact me portion of footer styling */
+
+.contactMe {
+  width: 100vw;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* styling for the "contact" header */
+.contactMe h4 {
+  font-size: 40px;
+}
+
+/* styling for the email */
+.contactMe h5 {
+  font-size: 22px;
+  margin: 30px 10px 0 10px;
+}
+
+/* styling fro 650px */
+@media (min-width: 650px) {
+  .description {
+    font-size: 25px;
+  }
+}
+
+/* Styling for the page when the screen size is over 820px */
+
+@media (min-width: 820px) { 
+
+  /* nav bar styling over 820px */
+  .navBar {
+    width: 100vw;
+    height: 150px;
+  }
+
+  .navLogo {
+    font-size: 35px;
+    margin-left: 20px;
+  }
+
+  .navTags {
+    font-size: 35px;
+    margin-right: 50px;
+  }
+
+  /* Home page styling for over 820px */
+  .intro {
+    font-size: 90px;
+    flex-wrap: wrap;
+  }
+
+  /* About me page styling for over 820px */
+  #aboutMe {
+    align-items: center;
+  }
+
+  .description {
+    font-size: 30px;
+    background: none;
+    width: 75%;
+    height: auto;
+    text-align: justify;
+  }
+
+  /* footer styling for over 820px */
+
+  footer {
+    height: 650px;
+  }
+
+  .socialsLogo img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .footerLogo {
+    font-size: 60px;
+    margin: 20px 0 0 0;
+  }
+
+  .contactMe {
+    margin-top: 20px;
+  }
+
+  .contactMe h4 {
+    font-size: 60px;
+  }
+
+  .contactMe h5 {
+    font-size: 40px;
+  }
+
+}
+
+/* styling for desktop and larger screens for 1024 px and bigger */
+
+@media (min-width: 1024px) {
+  
+  /* navbar styling for 1024px and above */
+  .navBar {
+    height: 100px;
+  }
+
+  .navLogo {
+    font-size: 25px;
+  }
+
+  .navTags {
+    font-size: 25px;
+  }
+
+  /* home screen stlying for 1024px and above */
+  .intro {
+    font-size: 78px;
+  }
+
+  /* about me page styling for 1024px and above */
+  #aboutMe {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .headshot {
+    max-width: 350px;
+  }
+
+  .description {
+    text-align: justify;
+    font-size: 27px;
+    margin-left: 30px;
+  }
+
+  /* footer styling for 1024px and above */
+  footer {
+    height: 350px;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .rightFooter {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+
+  }
+
+  .footerLogo {
+    width: 100%;
+    height: 50%;
+    margin-top: 50px;
+    font-size: 50px;
+  }
+  
+  .socialsLogo {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 50px;
+  }
+
+  .socialsLogo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contactMe {
+    width: 50%;
+    height: 100%;
+    margin-top: 0px;
+    justify-content: center;
+  }
+
+  .contactMe h4 {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .contactMe h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+  }
+
 }
