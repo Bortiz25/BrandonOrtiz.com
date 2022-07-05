@@ -123,14 +123,17 @@ a:hover {
 
 /* about me page styling */
 
-#aboutMe {
+.aboutMeBackground {
   background: #DADBC0;
-  position: relative;
   width: 100vw;
-  height: 1200px;
+}
+
+#aboutMe {
+  background-color: inherit;
+  padding: 60px 40px;
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
+  align-items: center;
 } 
 
 .description {
@@ -139,22 +142,17 @@ a:hover {
   display: flex;
   font-size: 20px;
   text-align: justify;
-  position: relative;
   height: auto;
-  width: 350px;
-  bottom: 18px;
-  left: 25px;
 }
 
 .headshot {
   height: auto;
-  width: 300px;
+  width: 100%;
+  max-width: 500px;
   border: 4px solid #626060;
   border-radius: 20px;
-  position: relative;
-  top: 18px;
-  left: 45px;
-  display: flex;
+  margin-bottom: 30px;
+
 }
 
 /* Footer styling */
@@ -164,7 +162,6 @@ footer {
   height: 500px;
   width: 100vw;
   display: flex;
-  position: absolute;
   flex-direction: column;
   /* border: 2px solid yellow; */
 }
@@ -172,7 +169,6 @@ footer {
 /* styling meant for desktop styling */
 
 .rightFooter {
-  /* border: 2px solid blueviolet; */
   width: 100vw;
   height: 50%;
   display: flex;
@@ -188,7 +184,6 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   font-size: 40px;
-  /* border: 2px solid red; */
 }
 
 .socialsLogo {
@@ -209,28 +204,28 @@ footer {
 .contactMe {
   width: 100vw;
   height: 50%;
-  margin-top: 18px;
-  /* border: 1px solid paleturquoise; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
 
 /* styling for the "contact" header */
 .contactMe h4 {
-  width: 100vw;
   font-size: 40px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  /* border: 1px solid red; */
 }
 
 /* styling for the email */
 .contactMe h5 {
-  width: 100vw;
   font-size: 22px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 20px;
+  margin: 30px 10px 0 10px;
+}
+
+/* styling fro 650px */
+@media (min-width: 650px) {
+  .description {
+    font-size: 25px;
+  }
 }
 
 /* Styling for the page when the screen size is over 820px */
@@ -261,13 +256,7 @@ footer {
 
   /* About me page styling for over 820px */
   #aboutMe {
-    height: 1500px;
     align-items: center;
-  }
-
-   .headshot {
-    top: 30px;
-    left: 0px;
   }
 
   .description {
@@ -275,8 +264,6 @@ footer {
     background: none;
     width: 75%;
     height: auto;
-    left: 0px;
-    bottom: 30px;
     text-align: justify;
   }
 
@@ -333,7 +320,72 @@ footer {
   }
 
   /* about me page styling for 1024px and above */
+  #aboutMe {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
 
-  /* we're going to make the text wrap with this one  */
+  .headshot {
+    max-width: 350px;
+  }
+
+  .description {
+    text-align: justify;
+    font-size: 27px;
+    margin-left: 30px;
+  }
+
+  /* footer styling for 1024px and above */
+  footer {
+    height: 350px;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .rightFooter {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+
+  }
+
+  .footerLogo {
+    width: 100%;
+    height: 50%;
+    margin-top: 50px;
+    font-size: 50px;
+  }
+  
+  .socialsLogo {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 50px;
+  }
+
+  .socialsLogo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contactMe {
+    width: 50%;
+    height: 100%;
+    margin-top: 0px;
+    justify-content: center;
+  }
+
+  .contactMe h4 {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .contactMe h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+  }
 
 }
