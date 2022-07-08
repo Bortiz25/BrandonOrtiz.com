@@ -1,65 +1,81 @@
-
 /*
 CSS reset code 
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  /*
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
     2. Remove default margin
   */
-  * {
-    margin: 0;
-  }
-  /*
+* {
+  margin: 0;
+}
+/*
     3. Allow percentage-based heights in the application
   */
-  html, body {
-    height: 100%;
-  }
-  /*
+html,
+body {
+  height: 100%;
+}
+/*
     Typographic tweaks!
     4. Add accessible line-height
     5. Improve text rendering
   */
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    background: black;
-  }
-  /*
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: black;
+}
+/*
     6. Improve media defaults
   */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  /*
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
     7. Remove built-in form typography styles
   */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  /*
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
     8. Avoid text overflows
   */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  /*
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
     9. Create a root stacking context
   */
-  #root, #__next {
-    isolation: isolate;
-  }
+#root,
+#__next {
+  isolation: isolate;
+}
 
 /* Beginning of my code */
 
 /* universal styling */
 * {
-  font-family: 'Courier New', Courier, monospace;
-  color: #E7E9DE;
+  font-family: "Courier New", Courier, monospace;
+  color: #e7e9de;
   background: #626060;
 }
 
@@ -124,7 +140,7 @@ a:hover {
 /* about me page styling */
 
 .aboutMeBackground {
-  background: #DADBC0;
+  background: #dadbc0;
   width: 100vw;
 }
 
@@ -134,11 +150,11 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-} 
+}
 
 .description {
   color: #626060;
-  background-color: #DADBC0;
+  background-color: #dadbc0;
   display: flex;
   font-size: 20px;
   text-align: justify;
@@ -152,7 +168,6 @@ a:hover {
   border: 4px solid #626060;
   border-radius: 20px;
   margin-bottom: 30px;
-
 }
 
 /* Footer styling */
@@ -230,8 +245,7 @@ footer {
 
 /* Styling for the page when the screen size is over 820px */
 
-@media (min-width: 820px) { 
-
+@media (min-width: 820px) {
   /* nav bar styling over 820px */
   .navBar {
     width: 100vw;
@@ -294,13 +308,11 @@ footer {
   .contactMe h5 {
     font-size: 40px;
   }
-
 }
 
 /* styling for desktop and larger screens for 1024 px and bigger */
 
 @media (min-width: 1024px) {
-  
   /* navbar styling for 1024px and above */
   .navBar {
     height: 100px;
@@ -348,7 +360,6 @@ footer {
     width: 50%;
     height: 100%;
     flex-direction: column;
-
   }
 
   .footerLogo {
@@ -357,7 +368,7 @@ footer {
     margin-top: 50px;
     font-size: 50px;
   }
-  
+
   .socialsLogo {
     width: 100%;
     height: 50%;
@@ -387,5 +398,4 @@ footer {
     text-align: center;
     font-size: 30px;
   }
-
 }
