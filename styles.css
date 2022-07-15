@@ -236,7 +236,15 @@ footer {
   margin: 30px 10px 0 10px;
 }
 
-/* styling fro 650px */
+/*  styling for the image when the screen is 500px wide*/
+@media (min-width: 500px) {
+  .headshot {
+    max-height: 450px;
+    width: auto;
+  }
+}
+
+/* styling for 650px */
 @media (min-width: 650px) {
   .description {
     font-size: 25px;
