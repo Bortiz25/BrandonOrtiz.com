@@ -1,22 +1,15 @@
 // Function Component that will render the whole website
+import Nav from "./components/Nav";
+import Body from "./components/Body";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav />
+      <Body />
+      <Footer />
+    </>
   );
 }
 
