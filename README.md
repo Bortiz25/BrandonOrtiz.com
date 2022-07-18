@@ -1,4 +1,3 @@
-#personal website markdown display file for github
 # Personal Portfolio Website 
 
 ### About 
