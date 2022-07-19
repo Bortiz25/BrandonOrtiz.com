@@ -84,7 +84,35 @@ a {
   text-decoration: inherit;
 }
 
+a:hover {
+  color: wheat;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+footer {
+  background-color: #626060;
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+/* styling for 820px */
+@media (min-width: 820px) {
+  footer {
+    height: 650px;
+  }
+}
+
+/* styling for 1024px */
+@media (min-width: 1024px) {
+  footer {
+    height: 350px;
+    align-items: center;
+    flex-direction: row;
+  }
 }

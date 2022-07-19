@@ -2,6 +2,7 @@
 import Nav from "./components/Nav";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
+import "./index.css";
 
 function App() {
   return (
