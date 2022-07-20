@@ -1,0 +1,59 @@
+/* module css file that will have the styling for the nav bar */
+
+/* nav bar styling */
+.navTags {
+  font-size: 20px;
+  margin-right: 10px;
+  margin-top: 5spx;
+}
+
+.navLogo {
+  background-color: #626060;
+  font-size: 20px;
+}
+
+.navBar {
+  background: #626060;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: calc(100vw);
+  padding: 30px;
+  position: fixed;
+  z-index: 2;
+}
+
+/* nav bar styling for when the screen is 820px and bigger  */
+@media (min-width: 820px) {
+  /* nav bar styling over 820px */
+  .navBar {
+    width: 100vw;
+    height: 150px;
+  }
+
+  .navLogo {
+    font-size: 35px;
+    margin-left: 20px;
+  }
+
+  .navTags {
+    font-size: 35px;
+    margin-right: 50px;
+  }
+}
+
+/* styling for the desktop adn larger screens for 1024 px and bigger */
+@media (min-width: 1024px) {
+  .navBar {
+    height: 100px;
+  }
+
+  .navLogo {
+    font-size: 25px;
+  }
+
+  .navTags {
+    font-size: 25px;
+  }
+}
