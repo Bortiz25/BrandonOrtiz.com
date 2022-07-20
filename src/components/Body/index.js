@@ -1,21 +1,30 @@
 // function component that will render the body of the site
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import headshot from "../../resources/headshot.jpg";
 import styles from "./Body.module.css";
-
-const word = "Brandon Ortiz.";
 
 function Body() {
   const [index, setIndex] = useState(0);
   const [intro, setIntro] = useState("");
-  const [word, setWord] = useState("Brandon Ortiz.");
+  const word = "Brandon Ortiz.";
+
+  const updateName = useCallback(() => {
+    if (index < word.length) {
+      setIntro(intro + word[index]);
+      setIndex(index + 1);
+    }
+  }, [index, intro]);
+
+  useEffect(() => {
+    setTimeout(updateName, 250);
+  }, [updateName]);
 
   return (
     <main>
       <div className={styles.homeScreen}>
         <header>
           <h2 id="home" className={styles.intro}>
-            {word}
+            {intro}
           </h2>
         </header>
       </div>
