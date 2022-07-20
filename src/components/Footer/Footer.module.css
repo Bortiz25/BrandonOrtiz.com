@@ -1,0 +1,127 @@
+/* module css file for Footer styling */
+
+/* Footer styling for mobile */
+.rightFooter {
+  width: 100vw;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* social media section styling */
+.footerLogo {
+  width: 100vw;
+  height: 124px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 40px;
+}
+
+.socialsLogo {
+  width: 100vw;
+  height: 124px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.socialLinks {
+  fill: #e7e9de;
+  width: 60px;
+  height: 60px;
+}
+
+.socialLinks:hover {
+  fill: wheat;
+}
+
+/* contact me section styling */
+.contactMe {
+  width: 100vw;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.contactMeHeader {
+  font-size: 40px;
+}
+
+.contactMeBody {
+  font-size: 22px;
+  margin: 30px 10px 0 10px;
+}
+
+/* footer styling for 820px width */
+@media (min-width: 820px) {
+  .socialLinks {
+    width: 90px;
+    height: 90px;
+  }
+
+  .footerLogo {
+    font-size: 60px;
+    margin: 20px 0 0 0;
+  }
+
+  .contactMe {
+    margin-top: 20px;
+  }
+
+  .contactMeHeader {
+    font-size: 60px;
+  }
+
+  .contactMeBody {
+    font-size: 40px;
+  }
+}
+
+/* styling for 1024px and above */
+@media (min-width: 1024px) {
+  .rightFooter {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .footerLogo {
+    width: 100%;
+    height: 50%;
+    margin-top: 50px;
+    font-size: 50px;
+  }
+
+  .socialsLogo {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 50px;
+  }
+
+  .socialLinks {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contactMe {
+    width: 50%;
+    height: 100%;
+    margin-top: 0px;
+    justify-content: center;
+  }
+
+  .contactMeHeader {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .contactMeBody {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+  }
+}
