@@ -24,6 +24,17 @@
   z-index: 2;
 }
 
+/* nav bar styling for 650px */
+@media (min-width: 650px) {
+  .navLogo {
+    font-size: 27px;
+  }
+
+  .navTags {
+    font-size: 27px;
+  }
+}
+
 /* nav bar styling for when the screen is 820px and bigger  */
 @media (min-width: 820px) {
   /* nav bar styling over 820px */
@@ -50,10 +61,10 @@
   }
 
   .navLogo {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .navTags {
-    font-size: 25px;
+    font-size: 30px;
   }
 }

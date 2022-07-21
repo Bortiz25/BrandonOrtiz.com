@@ -1,0 +1,50 @@
+/* experience module css file with styling for the experience section */
+
+/* styling for skills section */
+.skillsHeader {
+  background-color: #e7e9de;
+  color: #626060;
+  text-align: center;
+  font-size: 30px;
+  padding: 25px 0px 10px 0px;
+}
+
+.skills {
+  background-color: #e7e9de;
+  padding: 30px 20px 40px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.langLogos {
+  background-color: #e7e9de;
+  width: 100px;
+  margin: 10px 5px;
+}
+
+/* skill section styling 550px */
+@media (min-width: 550px) {
+  .skillsHeader {
+    font-size: 40px;
+  }
+}
+
+/* skills section styling for 820px */
+@media (min-width: 820px) {
+  .skillsHeader {
+    font-size: 50px;
+  }
+
+  .langLogos {
+    width: 115px;
+  }
+}
+
+/* skills section styling for 1024px */
+@media (min-width: 1024px) {
+  .langLogos {
+    width: 125px;
+  }
+}

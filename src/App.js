@@ -2,6 +2,7 @@
 import Nav from "./components/Nav";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
+import Experience from "./components/Experience";
 import "./index.css";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <>
       <Nav />
       <Body />
+      <Experience />
       <Footer />
     </>
   );
