@@ -43,7 +43,7 @@ function Footer() {
       </div>
       <div className={styles.contactMe}>
         <h4 className={styles.contactMeHeader}>Contact</h4>
-        <h5 className={styles.contactMeBody}>ortizbrandon140@gmail.com</h5>
+        <h5 className={styles.contactMeBody}>Coming Soon!🏗️</h5>
       </div>
     </footer>
   );

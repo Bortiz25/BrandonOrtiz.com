@@ -40,6 +40,7 @@
   font-size: 20px;
   text-align: justify;
   height: auto;
+  padding: 0px 10px;
 }
 
 .headshot {
@@ -61,6 +62,10 @@
   .headshot {
     max-height: 450px;
     width: auto;
+  }
+
+  .description {
+    font-size: 23px;
   }
 }
 
