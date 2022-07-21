@@ -1,6 +1,5 @@
 // function component that will render the body of the site
 import React, { useState, useEffect, useCallback } from "react";
-import headshot from "../../resources/headshot.jpg";
 import styles from "./Body.module.css";
 
 function Body() {
@@ -32,7 +31,6 @@ function Body() {
         <div id={styles["aboutMe"]}>
           <img
             className={styles.headshot}
-            src={headshot}
             alt="Sorry this image is unavailable"
           />
           <h3 className={styles.description}>

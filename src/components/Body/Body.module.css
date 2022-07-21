@@ -49,6 +49,11 @@
   border: 4px solid #626060;
   border-radius: 20px;
   margin-bottom: 30px;
+  content: url("../../resources/homeHeadshot.jpg");
+}
+
+.headshot:hover {
+  content: url("../../resources/altHeadshot.jpg");
 }
 
 /* styling for the image when the screen is 500px wide */
