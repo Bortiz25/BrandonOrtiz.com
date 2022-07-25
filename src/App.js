@@ -1,17 +1,11 @@
 // Function Component that will render the whole website
-import Nav from "./components/Nav";
-import Body from "./components/Body";
-import Footer from "./components/Footer";
-import Experience from "./components/Experience";
 import "./index.css";
+import RouterSystem from "./routes";
 
 function App() {
   return (
     <>
-      <Nav />
-      <Body />
-      <Experience />
-      <Footer />
+      <RouterSystem />
     </>
   );
 }
