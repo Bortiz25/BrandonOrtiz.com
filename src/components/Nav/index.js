@@ -1,5 +1,6 @@
 // function component that will render the nav bar on the site
 import styles from "./Nav.module.css";
+import { Link } from "react-router-dom";
 
 function Nav() {
   // this return method will render all that is needed for the nav bar
@@ -7,12 +8,19 @@ function Nav() {
     <nav className={styles.navBar}>
       <div className={styles.navLogo}>
         <h4>
-          <a href="#home">Brandon Ortiz.</a>
+          <Link to="/">Brandon Ortiz.</Link>
         </h4>
       </div>
-      <ul>
-        <li className={styles.navTags}>
-          <a href="#aboutMePage">About</a>
+      <ul className={styles.navLinks}>
+        <li>
+          <Link to="/projects" className={styles.navTags}>
+            Projects
+          </Link>
+        </li>
+        <li>
+          <a href="#aboutMePage" className={styles.navTags}>
+            About
+          </a>
         </li>
       </ul>
     </nav>
