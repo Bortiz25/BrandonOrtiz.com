@@ -20,6 +20,9 @@
   28% {
     height: calc(100vh);
   }
+  100% {
+    height: calc(100vh);
+  }
 }
 
 .homeScreen {
@@ -32,6 +35,7 @@
   animation-name: bounce;
   animation-duration: 7s;
   animation-delay: 5s;
+  animation-iteration-count: 3;
 }
 
 .homeScreenAlt {
