@@ -1,5 +1,5 @@
 // function component that will render the body of the site
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import styles from "./Body.module.css";
 
 function Body() {
