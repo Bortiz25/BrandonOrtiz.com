@@ -1,12 +1,15 @@
 // function component that will render the body of the site
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import styles from "./Body.module.css";
 
 function Body() {
   const [index, setIndex] = useState(0);
   const [intro, setIntro] = useState("");
+  // const [hasScrolled, setHasScrolled] = useState(false);
+  // const [atTop, setAtTop] = useState(true);
   const word = "Brandon Ortiz.";
 
+  //function and useEffect that create the typing effect for the opening page
   const updateName = useCallback(() => {
     if (index < word.length) {
       setIntro(intro + word[index]);
@@ -17,6 +20,25 @@ function Body() {
   useEffect(() => {
     setTimeout(updateName, 250);
   }, [updateName]);
+
+  // function updates the scroll state in order to end page bouncing animation
+  // const updateScroll = () => {
+  //   setHasScrolled(true);
+  //   setAtTop(false);
+  // };
+
+  //  function to check if we are back to the top of the screen
+  // const checkAtTop = () => {
+  //   if (window.scrollY && window.scrollY === 0) {
+  //     setHasScrolled(false);
+  //     setAtTop(true);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", updateScroll);
+  //   return () => window.removeEventListener("scroll", updateScroll);
+  // }, []);
 
   return (
     <main>
