@@ -5,17 +5,14 @@
 
 /* animation for the homescreen */
 @keyframes bounce {
-  0% {
-    height: calc(100vh);
-  }
   5.6% {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
   }
   11.2% {
     height: calc(100vh);
   }
   16.8% {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
   }
   28% {
     height: calc(100vh);
@@ -25,20 +22,14 @@
   }
 }
 
-.homeScreen {
-  background: #626060;
-  height: calc(100vh);
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.homeScreen:hover {
   animation-name: bounce;
   animation-duration: 7s;
   animation-delay: 5s;
-  animation-iteration-count: 3;
+  animation-iteration-count: infinite;
 }
 
-.homeScreenAlt {
+.homeScreen {
   background: #626060;
   height: calc(100vh);
   width: 100vw;
@@ -74,7 +65,7 @@
   background-color: #dadbc0;
   display: flex;
   font-size: 20px;
-  text-align: right;
+  text-align: left;
   height: auto;
   padding: 0px 10px;
 }
