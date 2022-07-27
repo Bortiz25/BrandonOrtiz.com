@@ -22,7 +22,13 @@
   }
 }
 
-.homeScreen:hover {
+.homeScreenAnim {
+  background: #626060;
+  height: calc(100vh);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   animation-name: bounce;
   animation-duration: 7s;
   animation-delay: 5s;
@@ -32,7 +38,7 @@
 .homeScreen {
   background: #626060;
   height: calc(100vh);
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,7 +55,7 @@
 /* styling for about me page */
 .aboutMeBackground {
   background: #dadbc0;
-  width: 100vw;
+  width: 100%;
 }
 
 #aboutMe {
