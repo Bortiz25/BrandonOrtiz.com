@@ -1,5 +1,15 @@
 /* module css file for Footer styling */
 
+/* animation for socialmedia links */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Footer styling for mobile */
 .rightFooter {
   width: 100%;
@@ -34,6 +44,9 @@
 
 .socialLinks:hover {
   fill: wheat;
+  animation: spin 1s 1;
+  height: 70px;
+  width: 70px;
 }
 
 /* contact me section styling */
@@ -68,6 +81,10 @@
     height: 75px;
     width: 75px;
   }
+  .socialLinks:hover {
+    height: 85px;
+    width: 85px;
+  }
 }
 
 /* footer styling for 820px width */
@@ -75,6 +92,11 @@
   .socialLinks {
     width: 90px;
     height: 90px;
+  }
+
+  .socialLinks:hover {
+    height: 100px;
+    width: 100px;
   }
 
   .footerLogo {
@@ -119,6 +141,11 @@
   .socialLinks {
     width: 65px;
     height: 65px;
+  }
+
+  .socialLinks:hover {
+    height: 75px;
+    width: 75px;
   }
 
   .contactMe {
