@@ -1,8 +1,8 @@
 // this function component will render the footer of the page with all the information necessary
-import { ReactComponent as Instagram } from "../../resources/instagram.svg";
-import { ReactComponent as Linkedin } from "../../resources/linkedin.svg";
-import { ReactComponent as Twitter } from "../../resources/twitter.svg";
-import { ReactComponent as Github } from "../../resources/github.svg";
+import { ReactComponent as Instagram } from "../../resources/socialmedia/instagram.svg";
+import { ReactComponent as Linkedin } from "../../resources/socialmedia/linkedin.svg";
+import { ReactComponent as Twitter } from "../../resources/socialmedia/twitter.svg";
+import { ReactComponent as Github } from "../../resources/socialmedia/github.svg";
 import styles from "./Footer.module.css";
 
 function Footer() {

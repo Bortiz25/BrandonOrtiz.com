@@ -1,5 +1,5 @@
 // function component that will render the nav bar on the site
-import styles from "./Nav.module.css";
+import styles from "./NavDesktop.module.css";
 import { Link } from "react-router-dom";
 
 function Nav() {
