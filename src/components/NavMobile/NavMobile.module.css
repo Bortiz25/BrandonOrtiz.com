@@ -1,9 +1,6 @@
 /* module css file that will have the styling for the nav bar on mobile */
 
-/* nav bar styling */
-#main {
-  visibility: visible;
-}
+/* nav bar default styling */
 
 .navLogo {
   background-color: #626060;
@@ -24,16 +21,12 @@
 
 .burger {
   height: 34px;
-  width: 34px;
+  width: 60px;
   fill: #e7e9de;
 }
 
 .burger:hover {
   fill: wheat;
-}
-
-#menu {
-  visibility: hidden;
 }
 
 /* nav bar styling for when the screen is 820px and bigger  */
@@ -48,10 +41,20 @@
     font-size: 35px;
     margin-left: 20px;
   }
-}
 
+  .burger {
+    height: 50px;
+    width: 50px;
+    margin: 0px 10px;
+  }
+}
+/* navbar will not be visible past 900px width */
 @media (min-width: 900px) {
   #menu {
+    visibility: hidden;
+  }
+
+  .navBar {
     visibility: hidden;
   }
 }
