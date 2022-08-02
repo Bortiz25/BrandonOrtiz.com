@@ -1,66 +1,10 @@
 /* styling for the Projects page */
 .main {
-  padding: 100px 50px;
-  height: calc(100vh - 100px);
+  height: calc(100vh);
+  padding-top: 100px;
   background-color: #dadbc0;
   color: #626060;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.message {
-  background-color: inherit;
-  color: inherit;
-  font-size: 40px;
-  padding: 70px 0px;
-  text-align: center;
-}
-
-.progress {
-  margin: 100px 0px 0px 0px;
-  height: 700px;
-}
-
-/* styling for 520px */
-@media (min-width: 520px) {
-  .message {
-    font-size: 50px;
-    padding: 50px 0px 0px 0px;
-  }
-
-  .progress {
-    margin: 60px 0px 0px 0px;
-  }
-}
-
-/* styling for 600px */
-@media (min-width: 600px) {
-  .message {
-    padding: 50px 0px;
-  }
-
-  .progress {
-    background-color: inherit;
-  }
-}
-
-/* styling for 820px */
-@media (min-width: 820px) {
-  .message {
-    padding: 50px 0px;
-    font-size: 55px;
-  }
-
-  .progress {
-    padding: 60px 0px 0px 0px;
-    width: 400px;
-  }
-}
-
-/* styling for 1020px */
-@media (min-width: 1020px) {
-  .progress {
-    padding: 0;
-  }
 }
