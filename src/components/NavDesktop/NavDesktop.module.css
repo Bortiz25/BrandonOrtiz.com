@@ -25,6 +25,7 @@
   padding: 30px;
   position: fixed;
   z-index: 2;
+  visibility: hidden;
 }
 
 /* nav bar styling for 650px */
@@ -61,6 +62,13 @@
 
   .navTags {
     font-size: 35px;
+  }
+}
+
+/* this style of the nav bar starts being visible after 900px */
+@media (min-width: 900px) {
+  .navBar {
+    visibility: visible;
   }
 }
 

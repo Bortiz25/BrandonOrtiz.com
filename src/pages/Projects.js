@@ -2,11 +2,13 @@
 import Project from "../components/Project";
 import NavDesktop from "../components/NavDesktop";
 import Footer from "../components/Footer";
+import NavMobile from "../components/NavMobile";
 
 function Projects() {
   return (
     <>
       <NavDesktop />
+      <NavMobile />
       <Project />
       <Footer />
     </>

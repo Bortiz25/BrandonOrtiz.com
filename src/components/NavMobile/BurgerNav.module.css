@@ -1,0 +1,68 @@
+/* css module file for the BurgerNav index file that will appear when burger bar is opened */
+
+/* styling for the burger menu */
+.hidden {
+  z-index: 3;
+  position: fixed;
+  right: 0px;
+  height: 100%;
+  width: 75%;
+  background-color: #928b8b;
+  color: #e7e9de;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition-duration: 500ms;
+}
+
+.visible {
+  z-index: 3;
+  position: fixed;
+  right: 0px;
+  height: 100%;
+  width: 75%;
+  background-color: #928b8b;
+  color: #e7e9de;
+  visibility: visible;
+  transform: translateX(0);
+  transition-duration: 500ms;
+}
+
+.main {
+  z-index: 3;
+  position: fixed;
+  right: 0px;
+  height: 100%;
+  width: 75%;
+  background-color: #928b8b;
+  color: #e7e9de;
+}
+
+.exitSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+  background-color: inherit;
+}
+
+.exit {
+  fill: #e7e9de;
+  height: 50px;
+  width: auto;
+  background-color: inherit;
+}
+
+.exit:hover {
+  fill: wheat;
+}
+
+.link {
+  color: inherit;
+  font-size: 30px;
+  padding: 0px 0px 0px 18px;
+  background-color: #928b8b;
+}
+
+.link:hover {
+  color: wheat;
+}
