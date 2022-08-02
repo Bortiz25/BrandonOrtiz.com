@@ -7,8 +7,8 @@ import NavMobile from "../components/NavMobile";
 function Projects() {
   return (
     <>
-      <NavDesktop />
       <NavMobile />
+      <NavDesktop />
       <Project />
       <Footer />
     </>
