@@ -1,10 +1,68 @@
 /* styling for the Projects page */
 .main {
-  height: calc(100vh);
   padding-top: 100px;
   background-color: #dadbc0;
   color: #626060;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.title {
+  background-color: #928b8b;
+  width: 100%;
+  font-size: 22px;
+  padding: 40px 0px;
+}
+
+.title h2 {
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+}
+
+/* styling for the personal website section */
+.websiteSection {
+  background-color: #928b8b;
+  color: #e7e9de;
+  margin: 80px 20px;
+}
+
+.webDescription {
+  color: inherit;
+  background-color: inherit;
+  padding: 0px 20px 10px 20px;
+}
+
+.webContainer {
+  margin: 20px;
+  background-color: inherit;
+  color: inherit;
+  position: relative;
+}
+
+.webLayer {
+  background-color: #808080;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  opacity: 0;
+}
+
+.github {
+  background-color: #808080;
+  height: 30px;
+  width: 30px;
+}
+
+.webLayer:hover {
+  opacity: 0.5;
+}
+
+.websiteImg {
+  background-color: inherit;
+  color: inherit;
+  position: relative;
+  z-index: 1;
 }
