@@ -1,7 +1,6 @@
-/* styling for the Projects page */
+/* mobile responsive styling for the Projects page */
 .main {
-  padding: 100px 50px;
-  height: calc(100vh - 100px);
+  padding-top: 100px;
   background-color: #dadbc0;
   color: #626060;
   display: flex;
@@ -9,58 +8,158 @@
   align-items: center;
 }
 
-.message {
-  background-color: inherit;
+.title {
+  background-color: #928b8b;
+  width: 100%;
+  font-size: 22px;
+  padding: 40px 0px;
+}
+
+.title h2 {
   color: inherit;
-  font-size: 40px;
-  padding: 70px 0px;
+  background-color: inherit;
   text-align: center;
 }
 
-.progress {
-  margin: 100px 0px 0px 0px;
-  height: 700px;
+/* styling for the personal website section */
+.websiteSection {
+  background-color: #928b8b;
+  color: #e7e9de;
+  margin: 80px 20px;
 }
 
-/* styling for 520px */
-@media (min-width: 520px) {
-  .message {
-    font-size: 50px;
-    padding: 50px 0px 0px 0px;
-  }
+.webDescription {
+  color: inherit;
+  background-color: inherit;
+  padding: 0px 20px 10px 20px;
+}
 
-  .progress {
-    margin: 60px 0px 0px 0px;
+.webContainer {
+  margin: 20px;
+  background-color: inherit;
+  color: inherit;
+  position: relative;
+}
+
+.webLayer {
+  background-color: #808080;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github {
+  background-color: #808080;
+  fill: black;
+  height: 90px;
+  width: 90px;
+}
+
+.webLayer:hover {
+  opacity: 0.5;
+}
+
+.websiteImg {
+  background-color: inherit;
+  color: inherit;
+  position: relative;
+  z-index: 1;
+}
+
+/* stylign for the page at 500px */
+@media (min-width: 500px) {
+  /* styling for website section */
+  .websiteSection {
+    margin: 80px 40px;
   }
 }
 
-/* styling for 600px */
+/* styling for the page at 600px */
 @media (min-width: 600px) {
-  .message {
-    padding: 50px 0px;
+  .title {
+    font-size: 25px;
   }
-
-  .progress {
-    background-color: inherit;
+  /* styling for website section */
+  .webDescription {
+    font-size: 23px;
   }
 }
 
-/* styling for 820px */
+/* styling for the page at 650px */
+@media (min-width: 650px) {
+  .title {
+    font-size: 27px;
+  }
+
+  /* website section styling */
+  .websiteSection {
+    margin: 100px 60px;
+  }
+
+  .github {
+    height: 130px;
+    width: 130px;
+  }
+
+  .webContainer {
+    margin: 30px;
+  }
+
+  .webDescription {
+    padding: 0px 30px 20px 30px;
+  }
+
+  .webDescription {
+    font-size: 25px;
+  }
+}
+
+/* stylign for the page at 820px */
 @media (min-width: 820px) {
-  .message {
-    padding: 50px 0px;
-    font-size: 55px;
+  .main {
+    padding: 150px 0px;
   }
 
-  .progress {
-    padding: 60px 0px 0px 0px;
-    width: 400px;
+  .title {
+    padding: 50px 0px;
+  }
+
+  /* website section styling */
+  .websiteSection {
+    margin: 150px 90px 100px 90px;
+  }
+
+  .github {
+    height: 160px;
+    width: 160px;
   }
 }
 
-/* styling for 1020px */
+/* styling for the page at 900px */
+@media (min-width: 900px) {
+  .main {
+    padding: 100px 0px;
+  }
+}
+
+/* styling for the page at 1020px */
 @media (min-width: 1020px) {
-  .progress {
-    padding: 0;
+  /* website styling section */
+  .websiteSection {
+    margin: 180px 180px 140px 180px;
+  }
+
+  .webContainer {
+    margin: 40px 40px 30px 40px;
+  }
+
+  .webDescription {
+    font-size: 28px;
+    padding: 0px 40px 20px 40px;
   }
 }
