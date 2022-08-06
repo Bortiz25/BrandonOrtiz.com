@@ -1,7 +1,7 @@
-// function component that will render the body of the site
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import styles from "./Body.module.css";
 
+// component renders the body of the home page including title page and the brief personal description
 function Body() {
   const [index, setIndex] = useState(0);
   const [intro, setIntro] = useState("");

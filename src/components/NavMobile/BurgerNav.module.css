@@ -2,7 +2,7 @@
 
 /* styling for the burger menu */
 .hidden {
-  z-index: 3;
+  z-index: 5;
   position: fixed;
   right: 0px;
   height: 100%;
@@ -15,7 +15,7 @@
 }
 
 .visible {
-  z-index: 3;
+  z-index: 5;
   position: fixed;
   right: 0px;
   height: 100%;
@@ -28,7 +28,7 @@
 }
 
 .main {
-  z-index: 3;
+  z-index: 5;
   position: fixed;
   right: 0px;
   height: 100%;

@@ -36,9 +36,9 @@ function NavMobile() {
         </h4>
         <br />
         <h4 className={menu.link}>
-          <a href="#aboutMePage" onClick={menuToggle} className={menu.link}>
+          <Link to="/" onClick={menuToggle} className={menu.link}>
             About
-          </a>
+          </Link>
         </h4>
       </div>
     </div>
