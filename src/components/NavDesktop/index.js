@@ -18,9 +18,15 @@ function Nav() {
           </Link>
         </li>
         <li>
-          <a href="#aboutMePage" className={styles.navTags}>
+          <Link
+            to={{
+              pathname: "/",
+              hash: "#aboutMePage",
+            }}
+            className={styles.navTags}
+          >
             About
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
