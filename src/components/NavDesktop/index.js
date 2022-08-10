@@ -17,17 +17,6 @@ function Nav() {
             Projects
           </Link>
         </li>
-        <li>
-          <Link
-            to={{
-              pathname: "/",
-              hash: "#aboutMePage",
-            }}
-            className={styles.navTags}
-          >
-            About
-          </Link>
-        </li>
       </ul>
     </nav>
   );
