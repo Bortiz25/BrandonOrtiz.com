@@ -30,6 +30,10 @@ function Body() {
     return () => window.removeEventListener("scroll", updateScroll);
   }, []);
 
+  /* TODO: change format of bio to a resume style format
+     with different categories that are filled and and fun
+     less professionality would reflect the personality of the 
+     individual myself  */
   return (
     <main>
       <div className={hasScrolled ? styles.homeScreen : styles.homeScreenAnim}>
@@ -41,7 +45,7 @@ function Body() {
       </div>
       <div className={styles.aboutMeBackground} id="aboutMePage">
         <div id={styles["aboutMe"]}>
-          <h2 className={styles.descriptionTitle}>Hello, my name is ...</h2>
+          <h2 className={styles.descriptionTitle}>BIO.</h2>
           <div className={styles.photoDiv}>
             <img
               className={styles.headshot}
@@ -52,11 +56,10 @@ function Body() {
               currently a sophomore attending Trinity University in San Antonio,
               Texas, where I am pursuing my B.S. in Computer Science. I am an
               aspiring software and web developer with interest in web3 and
-              blockchain development. I am working as a Junior Developer at
-              Varsity Hype, a sports tech company based out of Houston, Texas. I
-              have a passion for sports, soccer in specific, and for learning
-              new things. I am always open to growth as a person and as a
-              developer.
+              blockchain development. I am a software development intern at
+              Foreflight an aviation software company owned by Boeing. I am
+              pationate about sports , soccer mostly, I love to skateboard down
+              hills and I'm always open to growth as a person and developer.
             </p>
           </div>
         </div>
