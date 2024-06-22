@@ -52,14 +52,15 @@ function Body() {
               alt="Sorry this image is unavailable"
             />
             <p className={styles.description}>
-              Brandon Ortiz and I was born and raised in Houston, Texas. I am
-              currently a sophomore attending Trinity University in San Antonio,
-              Texas, where I am pursuing my B.S. in Computer Science. I am an
-              aspiring software and web developer with interest in web3 and
-              blockchain development. I am a software development intern at
-              Foreflight an aviation software company owned by Boeing. I am
-              pationate about sports , soccer mostly, I love to skateboard down
-              hills and I'm always open to growth as a person and developer.
+              I am a senior at Trinity University in San Antonio, Texas,
+              dedicated to improving myself in all fascets of life. A software
+              developer with aspirations to learn web3 developmenet and a
+              fascination with bitcoin and the revolutionary technology that is
+              the blockcahin. I'm currently a software development intern at
+              Foreflight, an aviation technology company. I am passionate about
+              sports , soccer mostly, I love to bomb hills on my skateboard and
+              I'm constantly open to growth through life experience. There is no
+              greater teacher than life itself.
             </p>
           </div>
         </div>
