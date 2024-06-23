@@ -30,6 +30,10 @@ function Body() {
     return () => window.removeEventListener("scroll", updateScroll);
   }, []);
 
+  /* TODO: change format of bio to a resume style format
+     with different categories that are filled and and fun
+     less professionality would reflect the personality of the 
+     individual myself  */
   return (
     <main>
       <div className={hasScrolled ? styles.homeScreen : styles.homeScreenAnim}>
@@ -41,22 +45,22 @@ function Body() {
       </div>
       <div className={styles.aboutMeBackground} id="aboutMePage">
         <div id={styles["aboutMe"]}>
-          <h2 className={styles.descriptionTitle}>Hello, my name is ...</h2>
+          <h2 className={styles.descriptionTitle}>BIO.</h2>
           <div className={styles.photoDiv}>
             <img
               className={styles.headshot}
               alt="Sorry this image is unavailable"
             />
             <p className={styles.description}>
-              Brandon Ortiz and I was born and raised in Houston, Texas. I am
-              currently a sophomore attending Trinity University in San Antonio,
-              Texas, where I am pursuing my B.S. in Computer Science. I am an
-              aspiring software and web developer with interest in web3 and
-              blockchain development. I am working as a Junior Developer at
-              Varsity Hype, a sports tech company based out of Houston, Texas. I
-              have a passion for sports, soccer in specific, and for learning
-              new things. I am always open to growth as a person and as a
-              developer.
+              I am a senior at Trinity University in San Antonio, Texas,
+              dedicated to improving myself in all fascets of life. A software
+              developer with aspirations to learn web3 developmenet and a
+              fascination with bitcoin and the revolutionary technology that is
+              the blockcahin. I'm currently a software development intern at
+              Foreflight, an aviation technology company. I am passionate about
+              sports , soccer mostly, I love to bomb hills on my skateboard and
+              I'm constantly open to growth through life experience. There is no
+              greater teacher than life itself.
             </p>
           </div>
         </div>

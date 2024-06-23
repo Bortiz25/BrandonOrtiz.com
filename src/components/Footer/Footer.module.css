@@ -45,7 +45,6 @@
 
 .socialLinks:hover {
   fill: wheat;
-  animation: spin 1s 1;
   height: 70px;
   width: 70px;
 }

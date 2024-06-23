@@ -9,7 +9,7 @@ import react from "../../resources/languages/reactLogo.png";
 function Experience() {
   return (
     <>
-      <h4 className={styles.skillsHeader}>Skills</h4>
+      <h4 className={styles.skillsHeader}>SKILLS.</h4>
       <div className={styles.skills}>
         <img className={styles.langLogos} alt="Scala" src={scala} />
         <img className={styles.langLogos} alt="HTML" src={html} />
