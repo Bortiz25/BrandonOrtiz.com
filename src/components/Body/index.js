@@ -32,8 +32,8 @@ function Body() {
 
   /* TODO: change format of bio to a resume style format
      with different categories that are filled and and fun
-     less professionality would reflect the personality of the 
-     individual myself  */
+     less professionality would better reflect the personality
+     of the individual */
   return (
     <main>
       <div className={hasScrolled ? styles.homeScreen : styles.homeScreenAnim}>
@@ -45,22 +45,20 @@ function Body() {
       </div>
       <div className={styles.aboutMeBackground} id="aboutMePage">
         <div id={styles["aboutMe"]}>
-          <h2 className={styles.descriptionTitle}>BIO.</h2>
+          <h2 className={styles.descriptionTitle}>Who am I?</h2>
           <div className={styles.photoDiv}>
             <img
               className={styles.headshot}
               alt="Sorry this image is unavailable"
             />
             <p className={styles.description}>
-              I am a senior at Trinity University in San Antonio, Texas,
-              dedicated to improving myself in all fascets of life. A software
-              developer with aspirations to learn web3 developmenet and a
-              fascination with bitcoin and the revolutionary technology that is
-              the blockcahin. I'm currently a software development intern at
-              Foreflight, an aviation technology company. I am passionate about
-              sports , soccer mostly, I love to bomb hills on my skateboard and
-              I'm constantly open to growth through life experience. There is no
-              greater teacher than life itself.
+              Hello, I am a senior at Trinity University in San Antonio, Texas,
+              dedicated to improving my software skills and dedicated to growth
+              in all fascets of my life. A software developer with aspirations
+              to break into web3 developmenet and a fascination with bitcoin and
+              the blockchain's revolutionary technology. I'm currently a
+              software engineering intern at Foreflight, an aviation technology
+              company.
             </p>
           </div>
         </div>

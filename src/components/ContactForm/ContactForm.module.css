@@ -1,0 +1,16 @@
+/* mobil responsive styling for the Contact Form */
+
+.main {
+  padding-top: 100px;
+  background-color: #dadbc0;
+  color: #070707;
+  height: calc(100vh);
+  width: 100%;
+}
+
+.main h2 {
+  background-color: inherit;
+  color: inherit;
+  text-align: center;
+  font-size: 45px;
+}

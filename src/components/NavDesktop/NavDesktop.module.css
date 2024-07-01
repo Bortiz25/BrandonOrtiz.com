@@ -8,15 +8,20 @@
 
 .navLinks {
   display: flex;
+  background-color: inherit;
 }
 
 .navLogo {
-  background-color: #626060;
+  background-color: #070707;
   font-size: 20px;
 }
 
+.navLogo h4 {
+  background-color: #070707;
+}
+
 .navBar {
-  background: #626060;
+  background: #070707;
   display: flex;
   justify-content: space-between;
   align-items: center;

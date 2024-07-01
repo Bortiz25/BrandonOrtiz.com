@@ -28,7 +28,9 @@ function Projects() {
             alt="personal website not loading . . ."
           />
         </div>
-        <h3 className={styles.webDescription}>Personal Website</h3>
+        <h3 className={styles.webDescription}>
+          Personal Website - BrandonOrtiz.dev
+        </h3>
       </div>
     </div>
   );

@@ -30,6 +30,11 @@ function NavMobile() {
           <Exit className={menu.exit} onClick={menuToggle} />
         </div>
         <h4 className={menu.link}>
+          <Link to="/" onClick={menuToggle} className={menu.link}>
+            Home
+          </Link>
+        </h4>
+        <h4 className={menu.link}>
           <Link to="/projects" onClick={menuToggle} className={menu.link}>
             Projects
           </Link>

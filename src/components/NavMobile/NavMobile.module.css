@@ -3,12 +3,12 @@
 /* nav bar default styling */
 
 .navLogo {
-  background-color: #626060;
+  background-color: #070707;
   font-size: 25px;
 }
 
 .navBar {
-  background: #626060;
+  background: #070707;
   display: flex;
   justify-content: space-between;
   align-items: center;

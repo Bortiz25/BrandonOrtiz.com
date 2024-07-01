@@ -17,6 +17,11 @@ function Nav() {
             Projects
           </Link>
         </li>
+        <li>
+          <Link to="/contact-me" className={styles.navTags}>
+            Contact
+          </Link>
+        </li>
       </ul>
     </nav>
   );

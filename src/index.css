@@ -73,10 +73,11 @@ h6 {
 /* Beginning of code */
 
 /* universal styling */
+
 * {
-  font-family: "Courier New", Courier, serif;
+  font-family: "Roboto", sans-serif;
   color: #e7e9de;
-  background: #626060;
+  background: #070707;
 }
 
 a {
@@ -85,7 +86,7 @@ a {
 }
 
 a:hover {
-  color: wheat;
+  color: #077187;
 }
 
 ul {
@@ -94,7 +95,7 @@ ul {
 }
 
 footer {
-  background-color: #626060;
+  background-color: #070707;
   height: 500px;
   width: 100vw;
   display: flex;
