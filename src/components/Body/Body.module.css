@@ -65,20 +65,25 @@
 }
 
 .description {
+  color: inherit;
+  background-color: inherit;
+  height: auto;
+  font-size: 10px;
+  margin: 10px; 
+  flex: 1; 
+  font-weight: bold;
+}
+
+.descriptionContainer {
   color: #626060;
   background-color: #dadbc0;
-  font-size: 16px;
-  text-align: center;
-  height: auto;
-  padding: 20px 10px;
-  font-weight: bold;
+  display: flex;
 }
 
 .descriptionTitle {
   color: #626060;
   background-color: inherit;
   padding: 10px 10px 30px 10px;
-  font-size: 28px;
   font-weight: bolder;
   text-align: center;
 }
@@ -92,10 +97,6 @@
   content: url("../../resources/personalphotos/homeHeadshot.jpg");
 }
 
-/* .headshot:hover {
-  content: url("../../resources/personalphotos/altHeadshot.jpg");
-} */
-
 .photoDiv {
   color: inherit;
   background-color: inherit;
@@ -107,13 +108,9 @@
 
 /* styling for the image when the screen is 500px wide */
 @media (min-width: 500px) {
-  .headshot {
-    max-width: 300px;
-    width: auto;
-  }
 
   .description {
-    font-size: 23px;
+    font-size: 12px;
   }
 
   .descriptionTitle {
@@ -124,11 +121,11 @@
 /* styling for 650px */
 @media (min-width: 650px) {
   .description {
-    font-size: 25px;
+    font-size: 15px;
   }
 
   .descriptionTitle {
-    font-size: 42px;
+    font-size: 40px;
   }
 }
 
@@ -152,20 +149,19 @@
 @media (min-width: 820px) {
   /* Home page styling for over 820px */
   .intro {
-    font-size: 90px;
+    font-size: 75px;
     flex-wrap: wrap;
   }
 
   .description {
-    font-size: 30px;
+    font-size: 18px;
     background: none;
     height: auto;
-    text-align: center;
     padding: 10px 30px 30px 30px;
   }
 
   .descriptionTitle {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
@@ -195,11 +191,11 @@
 
   .description {
     text-align: left;
-    font-size: 25px;
+    font-size: 18px;
   }
 
   .descriptionTitle {
-    font-size: 53px;
+    font-size: 50px;
     text-align: center;
   }
 }
