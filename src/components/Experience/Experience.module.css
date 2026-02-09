@@ -20,7 +20,7 @@
 
 .langLogos {
   background-color: #e7e9de;
-  width: 100px;
+  width: 65px;
   margin: 10px 5px;
 }
 
@@ -38,13 +38,13 @@
   }
 
   .langLogos {
-    width: 115px;
+    width: 70px;
   }
 }
 
 /* skills section styling for 1024px */
 @media (min-width: 1024px) {
   .langLogos {
-    width: 125px;
+    width: 90px;
   }
 }
