@@ -1,7 +1,9 @@
 // function component that will render the Projects page
 import styles from "./Project.module.css";
 import personalWeb from "../../resources/projectspage/websiteSC.png";
-import { ReactComponent as Github } from "../../resources/projectspage/projectGithub.svg";
+import corporateClimber from "../../resources/projectspage/CorporateClimberSC.png";
+import rustMessaging from "../../resources/projectspage/rustSC.png";
+import ProjectLink from "../ProjectLink";
 
 // this component will render the body of the Projects page
 // it contains image sneakpeeks to projects adn links to their github repos
@@ -11,24 +13,10 @@ function Projects() {
       <div className={styles.title}>
         <h2>Projects</h2>
       </div>
-      {/* personal website section and link to github */}
-      <div className={styles.websiteSection}>
-        <div className={styles.webContainer}>
-          <a
-            href="https://github.com/Bortiz25/BrandonOrtiz.com"
-            target="_blank"
-          >
-            <div className={styles.webLayer}>
-              <Github className={styles.github} />
-            </div>
-          </a>
-          <img
-            className={styles.websiteImg}
-            src={personalWeb}
-            alt="personal website not loading . . ."
-          />
-        </div>
-        <h3 className={styles.webDescription}>Personal Website</h3>
+      <div className={styles.projectContainer}>
+        <ProjectLink link="https://github.com/Bortiz25/BrandonOrtiz.com" title="Personal Website" source={personalWeb} />
+        <ProjectLink link="https://github.com/Bortiz25/CorporateClimber" title="Corporate Climber Game" source={corporateClimber} />
+        <ProjectLink link="https://github.com/Bortiz25/Rust-Messaging-Project" title="Rust Messaging Project" source={rustMessaging} /> 
       </div>
     </div>
   );
