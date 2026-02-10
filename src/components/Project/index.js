@@ -3,6 +3,7 @@ import styles from "./Project.module.css";
 import personalWeb from "../../resources/projectspage/websiteSC.png";
 import corporateClimber from "../../resources/projectspage/CorporateClimberSC.png";
 import rustMessaging from "../../resources/projectspage/rustSC.png";
+import sokoban from "../../resources/projectspage/SokobanSC.png";
 import ProjectLink from "../ProjectLink";
 
 // this component will render the body of the Projects page
@@ -17,6 +18,7 @@ function Projects() {
         <ProjectLink link="https://github.com/Bortiz25/BrandonOrtiz.com" title="Personal Website" source={personalWeb} />
         <ProjectLink link="https://github.com/Bortiz25/CorporateClimber" title="Corporate Climber Game" source={corporateClimber} />
         <ProjectLink link="https://github.com/Bortiz25/Rust-Messaging-Project" title="Rust Messaging Project" source={rustMessaging} /> 
+        <ProjectLink link="https://github.com/Bortiz25/Sokoban" title="Sokoban" source={sokoban} /> 
       </div>
     </div>
   );

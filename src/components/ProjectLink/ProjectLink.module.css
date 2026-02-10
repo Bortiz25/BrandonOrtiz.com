@@ -46,6 +46,7 @@
   color: inherit;
   position: relative;
   z-index: 1;
+  width: 300px; 
 }
 
 /* stylign for the page at 500px */
@@ -53,6 +54,9 @@
   /* styling for website section */
   .websiteSection {
     margin: 80px 40px;
+  }
+  .websiteImg{
+    width: 500px; 
   }
 }
 
@@ -69,7 +73,7 @@
 
   /* website section styling */
   .websiteSection {
-    margin: 100px 60px;
+    margin: 100px 30px;
   }
 
   .github {
@@ -87,6 +91,9 @@
 
   .webDescription {
     font-size: 25px;
+  }
+  .websiteImg{
+    width: 700px
   }
 }
 
@@ -107,5 +114,6 @@
 
   .websiteImg{
     width: 400px; 
+    height: 150px; 
   }
 }

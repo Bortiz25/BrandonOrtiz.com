@@ -6,7 +6,7 @@ import styles from "./Footer.module.css";
 
 function Footer() {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <div className={styles.rightFooter}>
         <h4 className={styles.footerLogo}>Socials</h4>
         <div className={styles.socialsLogo}>

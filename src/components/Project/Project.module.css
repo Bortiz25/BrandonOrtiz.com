@@ -26,7 +26,8 @@
   background-color: inherit;
   color: inherit;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 /* styling for the page at 600px */
@@ -34,12 +35,18 @@
   .title {
     font-size: 25px;
   }
+  .projectContainer {
+    flex-wrap: wrap;
+  }
 }
 
 /* styling for the page at 650px */
 @media (min-width: 650px) {
   .title {
     font-size: 27px;
+  }
+  .projectContainer {
+    flex-wrap: wrap;
   }
 }
 
@@ -58,5 +65,8 @@
 @media (min-width: 900px) {
   .main {
     padding: 100px 0px;
+  }
+  .projectContainer{
+    flex-wrap: nowrap;
   }
 }
